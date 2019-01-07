@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Sims 3 Loading Screen</title>
+        <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+
+    <style>
+@keyframes rotate {
+ to {
+  transform: rotate(1turn)
+ }
+}
+
+body {
+  background-image: url('http://i.imgur.com/mDZBKAH.png');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.loading {
+  max-width: 50%;
+  line-height: 1.4;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.loading__sims {
+  font-weight: bolder;
+  font-size: 18px;
+  font-family: 'Aldrich', sans-serif;
+  color: #31a33c;
+    text-shadow: 2px 2px 4px #000000;
+  margin: 0.6rem 0 2rem 0;
+  display: block;
+}
+
+.loading__anim {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  border: 5px solid rgba(189,189,189 ,0.25);
+  border-left-color: green;
+  border-top-color: green;
+  border-radius: 50px;
+  animation: rotate 1200ms infinite linear;
+ }
+
+.loading__logo {
+  width: 150px;
+}
+.copyright {
+  color: #31a33c;
+ text-shadow: 2px 2px 4px #000000;
+  font-size: 14px;
+	bottom: 0px;
+  margin: 25px;
+  display: block;
+}
+    </style>
+    <body>
+            <div class="loading">
+                    <img src="https://vignette.wikia.nocookie.net/csydes-test/images/1/1a/The_Sims_3_Logo.png/revision/latest?cb=20141211014820" alt="sims 3 logo" class="loading__logo">
+                   <span class="loading__sims">LOADING...</span>
+                   <span class="loading__anim"></span>
+                   <span class="copyright">
+                   @2009 Electronic Arts Inc. All Rights Reserved.
+                 </span>
+                 </div>
+    </body>
+    </html>
